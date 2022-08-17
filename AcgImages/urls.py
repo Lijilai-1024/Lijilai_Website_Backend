@@ -1,7 +1,6 @@
-from django.urls import path,include,re_path
+from django.urls import path,include
 from rest_framework import routers
 from AcgImages import views as AcgImagesView
-from picgo_backend import settings
 
 router = routers.DefaultRouter()
 router.register(r'upload', AcgImagesView.ImageViewSet)
